@@ -10,7 +10,7 @@ public class QuickSort {
                 leftSide++;
             while (listToSort[rightSide] > listBreakPointValue)
                 rightSide--;
-            if (leftSide<=rightSide) {
+            if (leftSide <= rightSide) {
                 int temp = listToSort[leftSide];
                 listToSort[leftSide] = listToSort[rightSide];
                 listToSort[rightSide] = temp;
@@ -19,10 +19,10 @@ public class QuickSort {
             }
         }
         while (leftSide < rightSide);
-        if (leftIndex<rightSide)
+        if (leftIndex < rightSide)
             quickSort(listToSort, leftIndex, rightSide);
-        if (leftSide<rightIndex)
-            quickSort(listToSort, leftSide,rightIndex);
+        if (leftSide < rightIndex)
+            quickSort(listToSort, leftSide, rightIndex);
         return listToSort;
     }
 }
